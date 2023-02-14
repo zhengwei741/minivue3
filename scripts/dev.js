@@ -1,7 +1,7 @@
 const { context } = require('esbuild')
 const path = require('path')
 
-const target = 'runtime-core'
+const target = 'runtime-dom'
 
 context({
   // 打包入口

@@ -1,1 +1,1 @@
-export const isArray = Array.isArray
+export { ShapeFlags, isString, isObject, isFunction } from './shapeFlags'

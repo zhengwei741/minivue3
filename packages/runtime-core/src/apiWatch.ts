@@ -1,6 +1,4 @@
-import { reactive, isReactive } from '../../reactivity/src/reactive'
-import { ReactiveEffect } from '../../reactivity/src/effect'
-import { isRef } from '../../reactivity/src/ref'
+import { isReactive, ReactiveEffect, isRef } from '@minivue/reactivity'
 
 export function watch(source, cb, options?) {
   return doWatch(source, cb, options)
@@ -44,7 +42,7 @@ function doWatch(source, cb, options) {
   }
 }
 
-// 递归调用 转换为响应式对象
+// 递归调用
 function traverse(value, seen?) {
   if (typeof value !== 'object') {
     return value

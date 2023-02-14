@@ -1,9 +1,14 @@
-import { reactive } from './reactive'
-import { ref } from './ref'
-import { effect } from './effect'
-import { computed } from './computed'
+export { reactive, isReactive } from './reactive'
+export { ref, isRef } from './ref'
+export { effect, ReactiveEffect } from './effect'
+export { computed } from './computed'
 
-const num = ref(0)
+// import { reactive } from './reactive'
+// import { ref } from './ref'
+// import { effect } from './effect'
+// import { computed } from './computed'
+
+// const num = ref(0)
 
 // const man = reactive({ name: 'tom', age: 18 })
 
@@ -16,10 +21,10 @@ const num = ref(0)
 // num.value++
 // man.name = 'jack'
 
-const com = computed(() => {
-  return num.value + 100
-})
+// const com = computed(() => {
+//   return num.value + 100
+// })
 
-num.value++
+// num.value++
 
-console.log(com.value)
+// console.log(com.value)

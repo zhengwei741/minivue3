@@ -1,13 +1,16 @@
-import { watch } from './apiWatch'
-import { reactive } from '../../reactivity/src/reactive'
+export { watch } from './apiWatch'
+export { createRenderer } from './renderer'
 
-const tom = reactive({ name: 'tom' })
+// import { watch } from './apiWatch'
+// import { reactive } from '../../reactivity/src/reactive'
 
-watch(
-  () => tom.name,
-  (newValue, oloValue) => {
-    console.log(newValue, oloValue)
-  }
-)
+// const tom = reactive({ name: 'tom' })
 
-tom.name = 'tom2'
+// watch(
+//   () => tom.name,
+//   (newValue, oloValue) => {
+//     console.log(newValue, oloValue)
+//   }
+// )
+
+// tom.name = 'tom2'
